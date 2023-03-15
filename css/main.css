@@ -1,0 +1,903 @@
+/* Start Global Rules */
+body {
+   font-family: 'Open Sans', sans-serif;
+}
+
+/* ------------------------------- Start Navigation Bar section---------------------------- */
+.navbar-inverse .navbar-brand {
+   color: #fff;
+   font-size: 25px;
+}
+
+.navbar-inverse .navbar-brand span {
+   color: #ff8b38;
+}
+
+.scrolled {
+   background-color: rgba(0, 0, 0, .8);
+}
+
+/* ------------------------------- End Navigation Bar section------------------------------- */
+
+
+/* ------------------------------- Start Header Section ------------------------------------ */
+.header {
+
+   /* For Image cover All  header Section  */
+   background: url('../Images/header.jpg') no-repeat top center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 100vh;
+   position: relative;
+   color: #fff;
+}
+
+/* For "Form" does not out of the Header section */
+@media (max-width: 991px) {
+   .header {
+      height: 860px
+   }
+}
+
+.header .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .6);
+}
+
+.header .centering-vh {
+   margin-top: 25vh
+}
+
+@media (max-width:991px) {
+   .header .centering-vh {
+      margin-top: 60px;
+   }
+
+}
+
+.header h1 {
+   /* margin-top: 0; */
+   font-weight: bold;
+   font-size: 60px;
+}
+
+.header h1 span {
+   font-weight: normal;
+   color: #ff8b38;
+}
+
+.header h1~p.lead {
+   font-size: 30px;
+   text-transform: uppercase;
+}
+
+.header h1~p.lead:after {
+   content: "";
+   display: block;
+   width: 70px;
+   height: 2px;
+   background-color: #fff;
+   margin: 25px 0;
+}
+
+/* For centering a line in "Mobile Screen" */
+@media (max-width:991px) {
+
+   .header h1~p.lead:after {
+      margin: 25px auto;
+   }
+
+}
+
+.header p:nth-last-child(2) {
+   color: #7f7e7e;
+}
+
+.header button {
+   margin-top: 20px;
+   padding: 5px 15px;
+   background: transparent;
+   border: 1px solid #fff;
+}
+
+@media (max-width:991px) {
+
+   .header button {
+      margin: 30px auto;
+      display: block;
+   }
+
+}
+
+.header form {
+   width: 360px;
+   background-color: #fff;
+   border-radius: 5px;
+   overflow: hidden;
+}
+
+.header form h2 {
+   margin-top: 0;
+   margin-bottom: 30px;
+   padding: 15px;
+
+   background-color: #f5f5f5;
+   color: #333;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.header form h2 span {
+   color: #ff8b38;
+
+}
+
+.header form .form-control {
+   margin: 0 auto 40px;
+   width: 80%;
+   border: none;
+   box-shadow: none;
+   border-radius: 0;
+   border-bottom: 1px solid #ccc;
+
+}
+
+.header form input[type="submit"] {
+   padding: 15px;
+   background-color: #ff8b38;
+   border-radius: 0;
+   font-size: 18px;
+}
+
+@media (max-width:991px) {
+
+   .header .text-center-xs {
+      text-align: center;
+   }
+
+}
+
+/* ------------------------------- End Header Section ------------------------------------ */
+
+/* ------------------------------- Start Social Media Section ---------------------------- */
+.social-section {
+   padding: 10px;
+   background-color: #fff;
+
+   -webkit-box-shadow: -2px -5px 13px #000;
+   -moz-box-shadow: -2px -5px 13px #000;
+   -o-box-shadow: -2px -5px 13px #000;
+   box-shadow: -2px -5px 13px #000;
+}
+
+@media (max-width: 991px) {
+   .social-section {
+      text-align: center;
+   }
+}
+
+.social-section h4 {
+   font-weight: bold;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+@media (max-width: 991px) {
+   .social-section h4 {
+      margin-bottom: 10px;
+   }
+}
+
+.social-section p {
+   color: #a1a1a1;
+   line-height: 1.4;
+}
+
+.social-section i {
+   color: #ccc;
+   margin: 20px 15px;
+   cursor: pointer;
+
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+   .social-section i {
+      margin: 10px 15px;
+   }
+}
+
+.social-section .fa-facebook-f:hover {
+   color: #1877f2;
+}
+
+.social-section .fa-twitter:hover {
+   color: #1da1f2;
+}
+
+.social-section .fa-google-plus-g:hover {
+   color: #db4437;
+}
+
+.social-section .fa-pinterest:hover {
+   color: #bd081c;
+}
+
+.social-section .fa-instagram:hover {
+   color: #4c5fd7;
+}
+
+.social-section .fa-lastfm:hover {
+   color: #52b1b3;
+}
+
+.social-section .fa-rss:hover {
+   color: #ee802f;
+}
+
+/* ------------------------------- End Social Media Section ---------------------------- */
+
+/* ------------------------------- Start Tabs Section ---------------------------------- */
+.tabs-section {
+   padding: 80px 0;
+   background-color: #f5f5f5
+}
+
+@media (max-width: 991px) {
+   .tabs-section {
+      text-align: center;
+   }
+
+}
+
+.tabs-section .tab-switch li {
+   color: #fff;
+   background-color: #333;
+   border-bottom: 1px solid #fff;
+   height: 110px;
+   line-height: 110px;
+   font-size: 20px;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+
+.tabs-section .tab-switch li.selected,
+.tabs-section .tab-switch li:hover {
+   background-color: #ff8b38;
+}
+
+/* Any div does not content class"tab-one" will  be hidden it */
+.tabs-section .tabs-content div:not(.tab-one) {
+   display: none;
+}
+
+.tabs-section .tabs-content h3 {
+   margin-top: 0;
+   margin-bottom: 20px;
+   font-weight: bold;
+   letter-spacing: -1px;
+}
+
+@media (max-width: 991px) {
+   .tabs-section .tabs-content h3 {
+      margin-top: 30px 0 20px;
+   }
+}
+
+.tabs-section .tabs-content p {
+   line-height: 1.6;
+   font-size: 18px;
+   color: #a6a7a9;
+}
+
+.tabs-section .tabs-content button {
+   color: #fff;
+   background-color: #ff8b38;
+
+}
+
+/* ------------------------------- End Tabs Section -------------------------------------- */
+
+/* ------------------------------- Start Sub List Section -------------------------------- */
+.sub-list {
+   padding: 80px 0;
+   background-color: #fff;
+}
+
+@media (max-width: 991px) {
+   .sub-list {
+      text-align: center;
+      padding: 40px 0;
+   }
+}
+
+.sub-list .sub-image {
+   margin-top: 50px;
+}
+
+.sub-list .sublist-head {
+   font-weight: bold;
+}
+
+.sub-list p {
+   color: #a6a7a9;
+}
+
+.sub-list .sublist-desc {
+   line-height: 1.7;
+   margin-bottom: 30px;
+}
+
+.sub-list .list-info .list-icon {
+   margin-bottom: 30px;
+   overflow: hidden;
+}
+
+.sub-list .list-info .list-icon i {
+   width: 40px;
+   height: 40px;
+   line-height: 38px;
+   text-align: center;
+   color: #ff8b38;
+   border: 2px solid #ff8b38;
+   border-radius: 50%;
+   margin-right: 20px;
+   margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+   .sub-list .list-info .list-icon i {
+      float: none !important;
+      margin: 10px 0;
+   }
+}
+
+.sub-list .list-icon .text-info {
+   width: calc(100% - 70px);
+
+}
+
+@media (max-width: 991px) {
+   .sub-list .list-icon .text-info {
+      float: none !important;
+      width: 100%;
+   }
+}
+
+.sub-list .list-icon .text-info h4 {
+   font-weight:
+}
+
+/* ------------------------------- End Sub List Section ----------------------------------- */
+
+/* ------------------------------- Start Standard Picture Section ------------------------- */
+.standard-picture {
+   padding: 80px 0;
+   background-color: #f5f5f5;
+}
+
+@media (max-width: 991px) {
+   .standard-picture {
+      text-align: center;
+      padding: 40px 0;
+   }
+}
+
+.standard-picture .standard-head {
+   font-weight: bold;
+   margin-top: 50px;
+}
+
+
+.standard-picture p {
+   color: #a6a7a9;
+   line-height: 1.7;
+}
+
+/* ------------------------------- Start Standard Picture Section ----------------------- */
+
+/* ------------------------------- Start Awesome Section -------------------------------- */
+.awesome-section {
+   padding: 80px 0;
+   background-color: #fff;
+}
+
+.awesome-section .awesome-head {
+   font-size: 50px;
+   font-family: 'Raleway', sans-serif;
+}
+
+.awesome-section .awesome-desc {
+   color: #a6a7a9;
+   line-height: 1.7;
+   margin-bottom: 50px;
+}
+
+.awesome-section i {
+   color: #ff8b38;
+   width: 70px;
+   height: 70px;
+   line-height: 68px;
+   border: 2px solid #ff8b38;
+   border-radius: 50%;
+   font-size: 25px;
+}
+
+.awesome-section i:hover {
+   -webkit-transform: scale(1.1, 1.1);
+   -moz-transform: scale(1.1, 1.1);
+   -o-transform: scale(1.1, 1.1);
+   transform: scale(1.1, 1.1);
+   border: 2px solid #DFDFDF
+}
+
+.awesome-section .feat-head {
+   font-weight: bold;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.awesome-section .feat-info {
+   color: #a6a7a9;
+   line-height: 1.7;
+}
+
+@media (max-width: 991px) {
+   .awesome-section .feat-box {
+      margin-bottom: 30px;
+   }
+}
+
+/* ------------------------------- End Awesome Section -------------------------------- */
+
+/* ------------------------------- Start Price Section ------------------------------ */
+.price-options {
+   padding: 80px 0;
+   background-color: #f5f5f5;
+}
+
+@media (max-width: 991px) {
+   .price-options {
+
+      text-align: center;
+      padding: 40px 0;
+   }
+}
+
+.price-options .price-head {
+   font-size: 40px;
+   font-family: 'Raleway', sans-serif;
+}
+
+.price-options .price-desc {
+   color: #a6a7a9;
+   line-height: 1.7;
+   margin-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+   .price-options .price-desc {
+      margin-bottom: 10px;
+   }
+}
+
+.price-options .price-box {
+   background-color: #fff;
+}
+
+@media (max-width: 991px) {
+   .price-options .price-box {
+      margin-bottom: 30px;
+   }
+}
+
+.price-options .price-box .plan-head {
+   padding: 15px 0;
+   margin: 0;
+   color: #fff;
+   background-color: #333;
+   font-weight: bold;
+   border-bottom: 1px solid #fff
+}
+
+.price-options .price-box .price-option {
+   background-color: #333;
+   color: #fff;
+   padding: 10px 0 20px;
+   border-bottom: 5px solid #ff8b38;
+}
+
+.price-options .price-box .price-option .price {
+   font-size: 70px;
+   display: block;
+   font-weight: bold;
+
+}
+
+.price-options .price-box .price-option .price .usd {
+   font-size: 40px;
+}
+
+.price-options .price-box .price-option .period {
+   color: #adadad;
+   font-weight: bold;
+   font-style: italic;
+}
+
+.price-options .price-box .most-pop {
+   color: #fff;
+   background-color: #ff8b38;
+   text-transform: uppercase;
+   padding: 5px 10px 10px;
+   margin-bottom: 0;
+   font-weight: bold;
+}
+
+.price-options .price-box .configuration li {
+   color: #a6a7a9;
+   padding: 10px;
+   text-transform: uppercase;
+   border-bottom: 1px solid #f5f5f5;
+}
+
+.price-options .basic,
+.price-options .enterprise {
+   margin-top: 35px;
+}
+
+/* ------------------------------- End Price Section -------------------------------- */
+
+/* ------------------------------- Start Testimonials Section ------------------------- */
+.testimonials {
+   padding: 80px 0;
+   background-color: #fff;
+}
+
+@media (max-width: 991px) {
+   .testimonials {
+
+      padding: 40px 0;
+   }
+}
+
+.testimonials .tes-head {
+   font-size: 40px;
+   font-family: 'Raleway', sans-serif;
+}
+
+.testimonials .tes-desc {
+   color: #a6a7a9;
+   margin-bottom: 40px;
+}
+
+.testimonials .client-say {
+   color: #8e8f93;
+   background-color: #f5f5f5;
+   padding: 20px;
+   margin-bottom: 20px;
+   position: relative;
+}
+
+.testimonials .client-say:after {
+   content: '';
+   display: block;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 15px;
+   border-color: #f5f5f5 transparent transparent;
+   position: absolute;
+   bottom: -28px;
+   left: 26px;
+}
+
+@media (max-width: 991px) {
+   .testimonials .media {
+      margin-bottom: 30px;
+   }
+}
+
+.testimonials .media .media-heading {
+   margin-top: 20px;
+   font-weight: bold;
+}
+
+.testimonials .media .media-body p {
+   color: #a6a7a9;
+}
+
+/* ------------------------------- End Testimonials Section --------------------------- */
+
+/* ------------------------------- Start Stylish Section-------------------------------- */
+.stylish {
+   /* For Image cover All  header Section  */
+   background: url('../Images/stylish-section-image.jpg') no-repeat top center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+
+   position: relative;
+   color: #fff;
+   min-height: 320px;
+}
+
+.stylish .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .6);
+   padding: 60px 0;
+}
+
+@media (max-width: 991px) {
+   .stylish .overlay {
+      padding: 30px 0;
+   }
+}
+
+.stylish .stylish-head {
+   font-size: 40px;
+   font-family: 'Raleway', sans-serif;
+   color: #fff;
+}
+
+.stylish .stylish-desc {
+   color: #a6a7a9;
+}
+
+.stylish .stylish-btn {
+   margin: 30px auto;
+   display: block;
+   padding: 8px 20px;
+   background-color: transparent;
+   border: 2px solid #fff;
+}
+
+.stylish .head-border-center:after {
+   background-color: #fff;
+}
+
+/* ------------------------------- End Stylish Section-------------------------------- */
+
+/* ------------------------------- Start Contact Us Section --------------------------- */
+.contact-us {
+   padding: 80px 0;
+}
+
+@media (max-width: 991px) {
+   .contact-us {
+      padding: 40px 0;
+   }
+}
+
+.contact-us .contact-head {
+   font-size: 40px;
+   font-family: 'Raleway', sans-serif;
+   color: #333;
+}
+
+.contact-us .contact-desc {
+   color: #a6a7a9;
+   margin-bottom: 40px;
+
+}
+
+.contact-us form input[type="text"],
+.contact-us form input[type="email"] {
+   margin-bottom: 20px;
+   border: none;
+   border-radius: 0;
+   box-shadow: none;
+   border-bottom: 1px solid #e0e0e0;
+
+}
+
+.contact-us form textarea {
+   height: 178px;
+   border: none;
+   border-radius: 0;
+   box-shadow: none;
+   border-bottom: 1px solid #e0e0e0;
+}
+
+.contact-us .contact-btn {
+   margin: 30px auto;
+   display: block;
+   width: 150px;
+   height: 40px;
+   color: #fff;
+   background-color: #ff8b38;
+   border-radius: 8px;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+/* ------------------------------- End Contact Us Section --------------------------------- */
+
+/* ------------------------------- Start Footer Section --------------------------------- */
+.footer {
+   background-color: #000000;
+}
+
+
+.footer .copyrigh {
+   color: #808080;
+   font-size: 18px;
+}
+
+.footer ul i {
+   color: #ccc;
+   margin: 20px 15px;
+   font-size: 25px;
+   cursor: pointer;
+
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+   .footer ul i {
+      margin: 20px 10px;
+   }
+}
+
+
+.footer .fa-facebook-f:hover {
+   color: #1877f2;
+}
+
+.footer .fa-twitter:hover {
+   color: #1da1f2;
+}
+
+.footer .fa-google-plus-g:hover {
+   color: #db4437;
+}
+
+.footer .fa-pinterest:hover {
+   color: #bd081c;
+}
+
+.footer .fa-instagram:hover {
+   color: #4c5fd7;
+}
+
+.footer .fa-lastfm:hover {
+   color: #52b1b3;
+}
+
+.footer .fa-rss:hover {
+   color: #ee802f;
+}
+
+/* ------------------------------- End Footer Section --------------------------------- */
+
+/* ------------------------------- Start Scroll To Top -------------------------------- */
+#scroll-top {
+   width: 50px;
+   height: 40px;
+   text-align: center;
+   color: #ddd;
+   cursor: pointer;
+   background-color: #ff8b38;
+   position: fixed;
+   z-index: 9999;
+   right: 15px;
+   bottom: 10px;
+   display: none;
+}
+
+#scroll-top:hover {
+   background-color: #444;
+}
+
+/* ------------------------------- End Scroll To Top ---------------------------------- */
+
+/* ------------------------------- Start Loading Section------------------------------- */
+.loading {
+   background: #222;
+   color: #fff;
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 99999;
+}
+
+.spinner {
+   width: 60px;
+   height: 60px;
+   background-color: #ff8b38;
+
+   margin: 300px auto;
+   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+   animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+   0% {
+      -webkit-transform: perspective(120px)
+   }
+
+   50% {
+      -webkit-transform: perspective(120px) rotateY(180deg)
+   }
+
+   100% {
+      -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+   }
+}
+
+@keyframes sk-rotateplane {
+   0% {
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+   }
+
+   50% {
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+   }
+
+   100% {
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+   }
+}
+
+/* ------------------------------- End Loading Section---------------------------------- */
+
+
+/* ------------------------------- Start Framework --------------------------------------*/
+.uppercase {
+   text-transform: uppercase;
+}
+
+/* For Add a line Under Heading */
+.head-border:after {
+   content: "";
+   display: block;
+   width: 70px;
+   height: 3px;
+   margin: 25px 0;
+   background-color: #ff8b38;
+}
+
+@media(max-width:991px) {
+   .head-border:after {
+      margin: 25px auto;
+   }
+}
+
+/* For Add a line-center Under Heading  */
+.head-border-center:after {
+   content: "";
+   display: block;
+   width: 70px;
+   height: 3px;
+   margin: 25px auto;
+   background-color: #ff8b38;
+}
+
+@media(max-width:767px) {
+   .text-center-xs {
+      text-align: center;
+   }
+}
+
+/* -------------------------------End Framework ---------------------------------------- */
